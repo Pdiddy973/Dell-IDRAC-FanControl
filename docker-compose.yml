@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dell-idrac-fancontrol:
+    image: pdiddy973/dell-idrac-fancontrol:latest
+    container_name: dell-idrac-fancontrol
+    restart: unless-stopped
+    environment:
+      - IDRAC_HOST=
+      - IDRAC_USER=
+      - IDRAC_PW=
+      - CHECK_INTERVAL=
